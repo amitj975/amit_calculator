@@ -216,9 +216,10 @@ public class MainActivity extends ActionBarActivity {
 
 				ans=cal(string);
 				string="";
-				string+=ans;
-				display.setText(string);
+				display.setText(String.format("%f",ans));
+				string=display.getText().toString();
 			}
+
 
 			private double cal(String string) {
 				int  l,i;
